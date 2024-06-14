@@ -1,0 +1,4 @@
+baseURL = 'https://bsidesrj.com.br/'
+languageCode = 'pt-br'
+title = 'BSides Rio de Janeiro'
+theme = 'hugo-split-theme'
