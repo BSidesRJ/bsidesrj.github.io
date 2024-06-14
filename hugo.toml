@@ -1,3 +1,84 @@
 baseURL = 'https://bsidesrj.com.br/'
 languageCode = 'pt-br'
 title = 'BSides Rio de Janeiro'
+theme = 'hugo-split-theme'
+
+disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
+disableHugoGeneratorInject = true
+
+# Local preview mode
+relativeURLs = true
+uglyURLs = true
+
+# Copyright
+copyright = "&copy;2024 BSidesRJ"
+
+[services]
+  [services.googleAnalytics]
+    # Enter your tracking code to enable Google Analytics
+    ID = ""
+
+[params]
+
+  # Metadata for search engines and social sharing
+  author = "BSidesRJ"
+  description = ""
+  shareImage = "images/social.jpg"
+  twitterHandle = "onepagelove"
+
+  # Favicon
+  favicon = "favicon.ico"
+
+  # Section - Visual
+  [params.visual]
+
+    # Image
+    [params.visual.image]
+      enable = true
+      file = "temporary_logo.jpeg"
+      position = "center center"
+
+    # Video
+    [params.visual.video]
+      enable = false
+      mute = true
+      file = "videos/background.mp4"
+      # youtubeId = "dk9uNWPP7EA"
+
+  # Links
+  #
+  # Links List #1
+  [[params.links]]
+    
+
+  # Links List #2
+  [[params.links]]
+    [params.links.list2]
+      heading = "Social"
+
+      [[params.links.list2.link]]
+        text = "Linkedin"
+        url = "https://www.linkedin.com/company/103575238"
+
+      [[params.links.list2.link]]
+        text = "Instagram"
+        url = "https://www.instagram.com/bsidesrj"
+
+      
+
+
+
+  # The original template is released under the Creative Commons Attribution 3.0 License.
+  # Please keep the original attribution link when using for your own project.
+  # If you'd like to use the template without the attribution, you can check out
+  # the license option via the template author's website: https://onepagelove.com/split
+
+[server]
+[[server.headers]]
+    for = '/**'
+    [server.headers.values]
+      Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://dummyimage.com"
+      Referrer-Policy = 'strict-origin-when-cross-origin'
+      X-Content-Type-Options = 'nosniff'
+      X-Frame-Options = 'DENY'
+      X-XSS-Protection = '1; mode=block'
