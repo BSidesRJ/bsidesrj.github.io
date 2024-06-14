@@ -10,6 +10,13 @@ disableHugoGeneratorInject = true
 relativeURLs = true
 uglyURLs = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+
 # Copyright
 copyright = "&copy;2024 BSidesRJ"
 
