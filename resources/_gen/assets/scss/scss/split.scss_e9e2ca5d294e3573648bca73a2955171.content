@@ -132,8 +132,8 @@ body.page-template-page-fullsingle-split {
   .fs-split .split-image {
     width: 50%;
     height: 100vh;
-    background-image: none;
-    background-position: 0% 0%;
+    background-image: url("../temporary_logo.jpeg");
+    background-position: center center;
     background-size: cover; }
     @media (max-width: 800px) {
       .fs-split .split-image {
