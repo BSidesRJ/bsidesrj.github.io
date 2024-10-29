@@ -31,7 +31,7 @@ copyright = "&copy;2024 BSidesRJ"
   author = "BSidesRJ"
   description = ""
   shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
+  twitterHandle = ""
 
   # Favicon
   favicon = "favicon.ico"
@@ -65,7 +65,7 @@ copyright = "&copy;2024 BSidesRJ"
 
       [[params.links.list2.link]]
         text = "Linkedin"
-        url = "https://www.linkedin.com/company/103575238"
+        url = "https://www.linkedin.com/company/bsidesrj"
 
       [[params.links.list2.link]]
         text = "Instagram"
