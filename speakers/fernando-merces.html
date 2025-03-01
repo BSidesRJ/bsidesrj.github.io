@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando Mercês - BSides Rio de Janeiro</title>
-    <!-- Tailwind CSS via CDN -->
+    <title>Fernando Mercês - BSidesRJ 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- CSS customizado -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body class="overflow-x-hidden min-h-screen relative">
     <!-- Elemento de background fixo -->
@@ -23,9 +21,9 @@
             <!-- Menu para desktop -->
             <nav class="hidden md:flex space-x-4 text-white text-lg">
                 <a href="../index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="../schedule.html" class="hover:text-yellow-400 transition">Schedule</a>
-                <a href="../patrocinadores.html" class="hover:text-yellow-400 transition">Sponsors</a>
-                <a href="../contato.html" class="hover:text-yellow-400 transition">Contact</a>
+                <a href="../schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
+                <a href="../index.html#patrocinadores" class="hover:text-yellow-400 transition">Patrocinadores</a>
+                <a href="../contato.html" class="hover:text-yellow-400 transition">Contato</a>
             </nav>
             <!-- Botão do menu móvel -->
             <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
@@ -39,65 +37,49 @@
         <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
             <ul class="flex flex-col p-4 space-y-2">
                 <li><a href="../index.html" class="block hover:text-yellow-400 transition">Home</a></li>
-                <li><a href="../schedule.html" class="block hover:text-yellow-400 transition">Schedule</a></li>
-                <li><a href="../patrocinadores.html" class="block hover:text-yellow-400 transition">Sponsors</a></li>
-                <li><a href="../contato.html" class="block hover:text-yellow-400 transition">Contact</a></li>
+                <li><a href="../schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
+                <li><a href="../index.html#patrocinadores" class="block hover:text-yellow-400 transition">Patrocinadores</a></li>
+                <li><a href="../contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
             </ul>
         </nav>
 
         <!-- Main Content -->
-        <main class="container mx-auto px-4 py-8">
-            <div class="max-w-3xl mx-auto bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-8">
-                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-                    <!-- Speaker Image -->
-                    <div class="w-48 h-48 rounded-full overflow-hidden bg-gray-800 flex-shrink-0">
-                        <img src="../images/speakers/fernando-merces.jpg" alt="Fernando Mercês" 
-                             class="w-full h-full object-cover"
-                             onerror="this.src='../images/speakers/default.jpg'">
+        <main class="flex-grow container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8">
+                <div class="text-center mb-12">
+                    <div class="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6">
+                        <img src="../images/speakers/fernando-merces.jpeg" alt="Fernando Mercês" class="w-full h-full object-cover" onerror="this.src='../images/speakers/default-avatar.png'">
                     </div>
-                    
-                    <!-- Speaker Info -->
-                    <div class="flex-grow text-center md:text-left">
-                        <h1 class="text-3xl font-bold text-white mb-2">Fernando Mercês</h1>
-                        <p class="text-yellow-400 mb-4">Senior Threat Researcher at Trend Micro</p>
-                        
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-semibold text-white mb-2">O que vi em dez anos como pesquisador de segurança</h2>
-                            <p class="text-gray-300">Main Stage - 09:30</p>
-                        </div>
-                        
-                        <div class="text-gray-300 mb-8 text-left">
-                            <p class="mb-4">Dediquei a última década ao trabalho como pesquisador de segurança para uma das maiores empresas dedicadas à segurança do mundo. Neste tempo, vi e cometi erros e injustiças. Vi gente se vislumbrar - e também me vislumbrei - com as remotas possibilidades de fama e dinheiro ao seguir maus conselhos de charlatães presos na mesma armadilha. Vi também quem teve sucesso, silencioso e minimamente estável. Vi bastante. Nesta palestra vou contar o que vi, transmitir minhas impressões do mercado atual, minha opinião sobre o que fazer e o que não fazer nessa área mas, principalmente, provocar a reflexão sobre o que você está fazendo (ou deixando de fazer), porque com certeza tem gente te vendo (ou deixando de ter ver).</p>
-                        </div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Fernando Mercês</h1>
+                    <p class="text-xl text-yellow-400">Senior Security Researcher</p>
+                </div>
 
-                        <div class="border-t border-gray-600 pt-6 mt-6">
-                            <h3 class="text-xl font-semibold text-white mb-4">Biography</h3>
-                            <p class="text-gray-300 text-left mb-4">
-                                Fernando é Pesquisador Sênior de Ameaças no time Forward-Looking Threat Research (FTR) da 
-                                <a href="https://www.trendmicro.com" target="_blank" class="text-yellow-400 hover:text-yellow-300">Trend Micro</a>, 
-                                onde utiliza engenharia reversa e técnicas de inteligência de ameaças na investigação de crimes 
-                                cibernéticos e ataques avançados patrocinados por Estados. Criador de várias ferramentas livres 
-                                na área (disponíveis no <a href="https://github.com/merces" target="_blank" class="text-yellow-400 hover:text-yellow-300">GitHub</a>), 
-                                com frequência apresenta suas pesquisas nos principais eventos de segurança no Brasil e no exterior. 
-                                É também professor e diretor executivo na 
-                                <a href="https://www.mentebinaria.com.br/" target="_blank" class="text-yellow-400 hover:text-yellow-300">Mente Binária</a>, 
-                                uma ONG de ensino e pesquisa comprometida com o ensino de computação no Brasil.
-                            </p>
-                        </div>
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">O que vi em dez anos como pesquisador de segurança</h2>
+                    <p class="text-lg text-white mb-4">Main Stage - 09:30</p>
+                    <div class="prose prose-lg text-gray-300">
+                        <p class="mb-6">Fernando Mercês compartilha suas experiências e aprendizados ao longo de uma década como pesquisador de segurança da informação, destacando os principais desafios, descobertas e tendências observadas no campo da cibersegurança.</p>
                     </div>
                 </div>
-                
-                <!-- Back to Schedule Button -->
-                <div class="mt-8 text-center">
-                    <a href="../schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
-                        Back to Schedule
-                    </a>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Sobre Fernando Mercês</h2>
+                    <div class="prose prose-lg text-gray-300">
+                        <p class="mb-6">Fernando Mercês é um renomado pesquisador de segurança com mais de uma década de experiência na área. Atualmente, atua como Senior Security Researcher na Trend Micro, onde lidera pesquisas em malware e ameaças cibernéticas.</p>
+                        <p class="mb-6">Com uma sólida formação acadêmica e vasta experiência prática, Fernando tem contribuído significativamente para a comunidade de segurança através de suas pesquisas, palestras e publicações técnicas.</p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="../schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
+                    Back to Schedule
+                </a>
             </div>
         </main>
 
         <!-- Footer -->
-        <footer class="text-center p-4 bg-black bg-opacity-80 text-white mt-auto">
+        <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
             &copy; 2025 BSidesRJ - All rights reserved.
         </footer>
     </div>

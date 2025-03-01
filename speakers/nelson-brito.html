@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelson Brito - BSides Rio de Janeiro</title>
-    <!-- Tailwind CSS via CDN -->
+    <title>Nelson Brito - BSidesRJ 2025</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- CSS customizado -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body class="overflow-x-hidden min-h-screen relative">
     <!-- Elemento de background fixo -->
@@ -23,9 +21,9 @@
             <!-- Menu para desktop -->
             <nav class="hidden md:flex space-x-4 text-white text-lg">
                 <a href="../index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="../schedule.html" class="hover:text-yellow-400 transition">Schedule</a>
-                <a href="../patrocinadores.html" class="hover:text-yellow-400 transition">Sponsors</a>
-                <a href="../contato.html" class="hover:text-yellow-400 transition">Contact</a>
+                <a href="../schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
+                <a href="../index.html#patrocinadores" class="hover:text-yellow-400 transition">Patrocinadores</a>
+                <a href="../contato.html" class="hover:text-yellow-400 transition">Contato</a>
             </nav>
             <!-- Botão do menu móvel -->
             <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
@@ -39,50 +37,48 @@
         <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
             <ul class="flex flex-col p-4 space-y-2">
                 <li><a href="../index.html" class="block hover:text-yellow-400 transition">Home</a></li>
-                <li><a href="../schedule.html" class="block hover:text-yellow-400 transition">Schedule</a></li>
-                <li><a href="../patrocinadores.html" class="block hover:text-yellow-400 transition">Sponsors</a></li>
-                <li><a href="../contato.html" class="block hover:text-yellow-400 transition">Contact</a></li>
+                <li><a href="../schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
+                <li><a href="../index.html#patrocinadores" class="block hover:text-yellow-400 transition">Patrocinadores</a></li>
+                <li><a href="../contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
             </ul>
         </nav>
 
         <!-- Main Content -->
-        <main class="container mx-auto px-4 py-8">
-            <div class="max-w-3xl mx-auto bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-8">
-                <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-                    <!-- Speaker Image -->
-                    <div class="w-48 h-48 rounded-full overflow-hidden bg-gray-800 flex-shrink-0">
-                        <img src="../images/speakers/nelson-brito.jpg" alt="Nelson Brito" 
-                             class="w-full h-full object-cover"
-                             onerror="this.src='../images/speakers/default.jpg'">
+        <main class="flex-grow container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8">
+                <div class="text-center mb-12">
+                    <div class="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6">
+                        <img src="../images/speakers/nelson-brito.jpeg" alt="Nelson Brito" class="w-full h-full object-cover" onerror="this.src='../images/speakers/default-avatar.png'">
                     </div>
-                    
-                    <!-- Speaker Info -->
-                    <div class="flex-grow text-center md:text-left">
-                        <h1 class="text-3xl font-bold text-white mb-2">Nelson Brito</h1>
-                        <p class="text-yellow-400 mb-4">Windows Security Specialist</p>
-                        
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-semibold text-white mb-2">Breaking Windows: A Journey Through Process Injection Techniques</h2>
-                            <p class="text-gray-300">Main Stage - 15:20</p>
-                        </div>
-                        
-                        <p class="text-gray-300">
-                            Deep dive into advanced Windows process injection techniques, exploring both traditional and modern methods used in malware and red team operations. This talk will cover detection evasion strategies and defensive countermeasures.
-                        </p>
+                    <h1 class="text-4xl font-bold text-white mb-2">Nelson Brito</h1>
+                    <p class="text-xl text-yellow-400">Security Researcher</p>
+                </div>
+
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">Inception — Tips and tricks I've learned reversing vulnerabilities!</h2>
+                    <p class="text-lg text-white mb-4">16:00 - Palco Principal</p>
+                    <div class="prose prose-lg text-gray-300">
+                        <p class="mb-6">Uma jornada através das técnicas e truques aprendidos durante anos de pesquisa e reversão de vulnerabilidades, compartilhando insights valiosos para profissionais de segurança.</p>
                     </div>
                 </div>
-                
-                <!-- Back to Schedule Button -->
-                <div class="mt-8 text-center">
-                    <a href="../schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
-                        Back to Schedule
-                    </a>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">About Nelson Brito</h2>
+                    <div class="prose prose-lg text-gray-300">
+                        <p class="mb-6">Nelson Brito é um pesquisador de segurança com vasta experiência em engenharia reversa e análise de vulnerabilidades. Sua expertise em descobrir e documentar falhas de segurança tem contribuído significativamente para a comunidade de segurança da informação.</p>
+                    </div>
                 </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="../schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
+                    Back to Schedule
+                </a>
             </div>
         </main>
 
         <!-- Footer -->
-        <footer class="text-center p-4 bg-black bg-opacity-80 text-white mt-auto">
+        <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
             &copy; 2025 BSidesRJ - All rights reserved.
         </footer>
     </div>
