@@ -2,14 +2,14 @@
 
 /* Elemento de background fixo */
 .fixed-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../images/background.png') no-repeat center center;
-  background-size: cover;
-  z-index: -1;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/background.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Seção de Patrocinadores */
@@ -61,4 +61,22 @@
 }
 .sponsor.bronze img {
   max-width: 180px;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffed4a;
 }
