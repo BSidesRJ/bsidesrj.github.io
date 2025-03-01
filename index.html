@@ -43,7 +43,7 @@
       <nav class="hidden md:flex space-x-4 text-white text-lg">
         <a href="index.html" class="hover:text-yellow-400 transition">Home</a>
         <a href="schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
-        <a href="patrocinadores.html" class="hover:text-yellow-400 transition">Patrocinadores</a>
+        <a href="#patrocinadores" class="hover:text-yellow-400 transition">Patrocinadores</a>
         <a href="contato.html" class="hover:text-yellow-400 transition">Contato</a>
       </nav>
       <!-- Botão do menu móvel -->
@@ -59,7 +59,7 @@
       <ul class="flex flex-col p-4 space-y-2">
         <li><a href="index.html" class="block hover:text-yellow-400 transition">Home</a></li>
         <li><a href="schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
-        <li><a href="patrocinadores.html" class="block hover:text-yellow-400 transition">Patrocinadores</a></li>
+        <li><a href="#patrocinadores" class="block hover:text-yellow-400 transition">Patrocinadores</a></li>
         <li><a href="contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
       </ul>
     </nav>
@@ -132,27 +132,63 @@
       </div>
     </main>
 
-    <!-- Espaço para separar o header do conteúdo -->
-    <div class="pt-8"></div>
+    <section id="patrocinadores" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center text-white mb-12">Patrocinadores</h2>
+        <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
+          <div class="mb-16">
+            <h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Diamante</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/patrocinadores/uva.webp" alt="UVA" class="max-h-32">
+              </div>
+              <div class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/patrocinadores/ibliss.png" alt="iBliss" class="max-h-32">
+              </div>
+            </div>
+          </div>
 
-    <!-- Conteúdo Principal -->
-    <main class="container mx-auto px-4 text-white flex-1 py-8">
-      <h1 class="text-4xl font-bold text-center mb-6">Bem-vindo à BSidesRJ</h1>
-      <p class="text-center mb-10">O maior evento de segurança da informação do Rio de Janeiro</p>
-      
-      <!-- Call to Action para a Agenda -->
-      <div class="text-center mt-8">
-        <a href="schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
-          Ver Programação Completa
-        </a>
+          <div class="mb-16">
+            <h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Ouro</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/patrocinadores/clavis.webp" alt="Clavis" class="max-h-24">
+              </div>
+              <div class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/patrocinadores/hakai.png" alt="Hakai" class="max-h-24">
+              </div>
+              <div class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/patrocinadores/vortex.png" alt="Vortex" class="max-h-24">
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-16">
+            <h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Prata</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Em breve -->
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Bronze</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/bronze1.png" alt="Patrocinador Bronze 1" class="max-h-20">
+              </div>
+              <div class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+                <img src="images/bronze2.png" alt="Patrocinador Bronze 2" class="max-h-20">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-  
+    </section>
+
     <!-- Footer -->
     <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
-      &copy; 2025 BSidesRJ - Todos os direitos reservados.
+      &copy; 2025 BSidesRJ - All rights reserved.
     </footer>
-  
   </div>
 
   <!-- JavaScript for mobile menu and countdown -->
