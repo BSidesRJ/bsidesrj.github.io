@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSidesRJ - BSides Rio de Janeiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" type="image/x-icon" href="\images\favicon.ico">
+    <style>
+        .countdown-item {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+          100% { transform: scale(1); }
+        }
+        .hero-button {
+          animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden min-h-screen relative">
+    <div class="fixed-bg"></div>
+    <div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
+        <header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
+            <a href="/index.html">
+                <img src="../images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
+            </a>
+            <nav class="hidden md:flex space-x-4 text-white text-lg">
+                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
+                <a href="/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
+                <a href="/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
+                <a href="/contato.html" class="hover:text-yellow-400 transition">Contato</a>
+            </nav>
+            <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </header>
+        <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
+            <ul class="flex flex-col p-4 space-y-2">
+                <li><a href="/index.html" class="block hover:text-yellow-400 transition">Home</a></li>
+                <li><a href="/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
+                <li><a href="/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
+                <li><a href="/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
+            </ul>
+        </nav>
+        <main class="flex-grow container mx-auto px-4 py-16">
+            <div class="max-w-4xl mx-auto bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8">
+                <div class="text-center mb-12">
+                    <div class="w-48 h-48 rounded-full overflow-hidden mx-auto mb-6">
+                        <img src="../images/speakers/oliveira-lima.jpeg" alt="Oliveira Lima" class="w-full h-full object-cover" onerror="this.src='../images/speakers/default-avatar.png'">
+                    </div>
+                    <h1 class="text-4xl font-bold text-white mb-2">Oliveira Lima</h1>
+                </div>
+
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">OPSEC for Red Teams - Operações Clandestinas Autorizadas</h2>
+                    <p class="text-lg text-white mb-4">TBD - Palco Principal</p>
+                    <div class="prose prose-lg text-gray-300">
+                        <p class="mb-6">
+                            Como costumo dizer: não simule a ameaça — seja a ameaça.
+                            Para isso, precisamos de certas doses de OPSEC para preparar os times defensores a lidarem com ameaças que estão realmente prontas para tal.
+                            Falaremos sobre por que, muitas vezes, os operadores são detectados — não por azar, mas simplesmente por não se atentarem à forma como suas ações são executadas.
+                            Desde o exemplo simples do operador que utiliza um equipamento com setup em VMs, usando orquestradores como Proxmox. Será que os operadores sabem que, dependendo de como suas redes estão configuradas, ao obter acesso à rede interna durante um pedido DHCP, o pacote pode enviar um “banner” gigante chamado Proxmox?
+                            Ou que, dependendo da configuração de rede do setup, pacotes do protocolo mDNS/Bonjour em broadcast podem denunciar a presença do operador?
+                            Levarei também diversas outras situações vividas ao longo de anos de operações de Red Team no Brasil e no mundo, além de exemplos técnicos e casos apresentados em conferências.</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-yellow-400 mb-4">About</h2>
+                    <div class="prose prose-lg text-gray-300">
+                        <p class="mb-6">
+                            Oliveira Lima Jr é fundador da Hakai security e tem mais de 14 anos de experiência em cibersegurança, com foco em pentest e operações de Red Team.
+                            Ao longo de sua carreira como pesquisador, já reportou diversas vulnerabilidades críticas em empresas como Trend Micro, Cisco, D-Link, entre outras — além de ter mais de 40 CVEs registrados em seu nome.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="../schedule.html" class="inline-block bg-yellow-400 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition duration-300">
+                    Back to Schedule
+                </a>
+            </div>
+        </main>
+
+        <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
+            &copy; 2025 BSidesRJ - All rights reserved.
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
