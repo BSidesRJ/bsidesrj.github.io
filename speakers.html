@@ -1,124 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSidesRJ - Palestrantes</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="icon" type="image/x-icon" href="\images\favicon.ico">
-    <style>
-        .countdown-item {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-        }
-        .hero-button {
-        animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-        }
-    </style>
-</head>
-<body class="overflow-x-hidden min-h-screen relative">
-    <div class="fixed-bg"></div>
-    <div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
-        <header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
-            <a href="/index.html">
-                <img src="images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
-            </a>
-            <nav class="hidden md:flex space-x-4 text-white text-lg">
-                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
-                <a href="/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
-                <a href="/contato.html" class="hover:text-yellow-400 transition">Contato</a>
-            </nav>
-            <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
-        </header>
-        <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
-            <ul class="flex flex-col p-4 space-y-2">
-                <li><a href="/index.html" class="block hover:text-yellow-400 transition">Home</a></li>
-                <li><a href="/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
-                <li><a href="/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
-                <li><a href="/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
-            </ul>
-        </nav>
-        <main class="container mx-auto px-4 py-16">
-            <h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Palestrantes</h1>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Nelson Brito</h3>
-                    <p class="text-gray-300 mb-4">TBD</p>
-                    <a href="speakers/nelson-brito.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Oliveira Lima</h3>
-                    <p class="text-gray-300 mb-4">OPSEC for Red Teams - Operações Clandestinas Autorizadas</p>
-                    <a href="speakers/oliveira-lima.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Filipi Pires</h3>
-                    <p class="text-gray-300 mb-4">TBD</p>
-                    <a href="speakers/filipi-pires.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Rômulo Rocha</h3>
-                    <p class="text-gray-300 mb-4">O primeiro dia de um agente de IA no SOC</p>
-                    <a href="speakers/romulo-rocha.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Michelle Mesquita</h3>
-                    <p class="text-gray-300 mb-4">Pipeline seguro para modelos de IA</p>
-                    <a href="speakers/michelle-mesquita.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Abid Lohan</h3>
-                    <p class="text-gray-300 mb-4">Android Game Hacking</p>
-                    <a href="speakers/abid-lohan.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">Kizzy Macedo Benjamin</h3>
-                    <p class="text-gray-300 mb-4">De 0 ao SOC: A curva real que ninguém ensina (e por que isso importa)</p>
-                    <a href="speakers/kizzy-macedo.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div>
-                <!-- <div
-                    class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2"></h3>
-                    <p class="text-gray-300 mb-4"></p>
-                    <a href="speakers/.html" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
-                </div> -->
-            </div>
-        </main>
-        <footer class="text-center p-4 bg-black bg-opacity-80 text-white mt-auto">
-            &copy; 2025 BSidesRJ - All rights reserved.
-        </footer>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-        document.getElementById('mobile-menu-btn').addEventListener('click', toggleMenu);
-    </script>
-</body>
-</html>
+---
+layout: default
+title: Palestrantes
+---
+<main class="container mx-auto px-4 py-16">
+	<h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Palestrantes</h1>
+	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+		{% assign speakers = site.speakers | sort: "order" %}
+		{% for speaker in speakers %}
+			<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+				<h3 class="text-2xl font-bold text-white mb-2">{{ speaker.name }}</h3>
+				<p class="text-gray-300 mb-4">{{ speaker.talk_title | default: "TBD" }}</p>
+				<a href="{{ speaker.url | relative_url }}" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
+			</div>
+		{% endfor %}
+	</div>
+</main>

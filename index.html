@@ -1,276 +1,152 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BSidesRJ - BSides Rio de Janeiro</title>
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="icon" type="image/x-icon" href="\images\favicon.ico">
-	<style>
-        .countdown-item {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-        }
-        .hero-button {
-        animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-        }
-	</style>
-</head>
-<body class="overflow-x-hidden min-h-screen relative">
-	<div class="fixed-bg"></div>
-	<div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
-		<header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
-			<a href="/index.html">
-				<img src="images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
+---
+layout: default
+title: BSides Rio de Janeiro
+include_countdown: true
+---
+<main class="flex-grow">
+	<div class="container mx-auto px-4 py-16 text-center">
+		<h1 class="text-5xl md:text-6xl font-bold text-white mb-8">BSides Rio de Janeiro 2026</h1>
+		<p class="text-xl md:text-2xl text-yellow-400 mb-8">28 de Março de 2026 - O maior evento de segurança da informação do Rio</p>
+		<div class="mb-12 bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 max-w-4xl mx-auto">
+			<h2 class="text-2xl font-bold text-white mb-4">Local do Evento</h2>
+			<div class="text-yellow-400 text-xl mb-4">Universidade Veiga de Almeida - Campus Tijuca</div>
+			<p class="text-white mb-4">Rua Ibituruna, 108 - Tijuca, Rio de Janeiro - RJ</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="https://www.uva.br/campus-tijuca/" target="_blank"
+					class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+					<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+						<path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+					</svg>
+					Informações do Campus
+				</a>
+				<a href="https://goo.gl/maps/K8s7nQBsfKEfCqMf6" target="_blank"
+					class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+					<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+						<path fill-rule="evenodd"
+							d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+							clip-rule="evenodd" />
+					</svg>
+					Ver no Google Maps
+				</a>
+			</div>
+		</div>
+		<div class="mb-12">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="days" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Dias</div>
+				</div>
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="hours" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Horas</div>
+				</div>
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="minutes" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Minutos</div>
+				</div>
+				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
+					<div id="seconds" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00</div>
+					<div class="text-white text-lg">Segundos</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+			<a href="https://www.sympla.com.br/evento/bsides-rio-de-janeiro/3226424" target="_blank"
+				class="hero-button inline-block bg-yellow-400 text-black text-xl font-bold py-4 px-8 rounded-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
+				Adquira seu ingresso de apoaidor
 			</a>
-			<nav class="hidden md:flex space-x-4 text-white text-lg">
-				<a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
-				<a href="/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
-				<a href="/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
-				<a href="/contato.html" class="hover:text-yellow-400 transition">Contato</a>
-			</nav>
-			<button id="mobile-menu-btn" class="md:hidden text-white ml-4">
-				<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-					</path>
-				</svg>
-			</button>
-		</header>
-		<nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
-			<ul class="flex flex-col p-4 space-y-2">
-				<li><a href="/index.html" class="block hover:text-yellow-400 transition">Home</a></li>
-				<li><a href="/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
-				<li><a href="/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
-				<li><a href="/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
-			</ul>
-		</nav>
-		<main class="flex-grow">
-			<div class="container mx-auto px-4 py-16 text-center">
-				<h1 class="text-5xl md:text-6xl font-bold text-white mb-8">BSides Rio de Janeiro 2026</h1>
-				<p class="text-xl md:text-2xl text-yellow-400 mb-8">28 de Março de 2026 - O maior evento de segurança da
-					informação do Rio</p>
-				<div class="mb-12 bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 max-w-4xl mx-auto">
-					<h2 class="text-2xl font-bold text-white mb-4">Local do Evento</h2>
-					<div class="text-yellow-400 text-xl mb-4">Universidade Veiga de Almeida - Campus Tijuca</div>
-					<p class="text-white mb-4">Rua Ibituruna, 108 - Tijuca, Rio de Janeiro - RJ</p>
-					<div class="flex flex-col sm:flex-row gap-4 justify-center">
-						<a href="https://www.uva.br/campus-tijuca/" target="_blank"
-							class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
-							<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-								<path
-									d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-							</svg>
-							Informações do Campus
-						</a>
-						<a href="https://goo.gl/maps/K8s7nQBsfKEfCqMf6" target="_blank"
-							class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
-							<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd"
-									d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-									clip-rule="evenodd" />
-							</svg>
-							Ver no Google Maps
-						</a>
-					</div>
-				</div>
-				<div class="mb-12">
-					<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-						<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
-							<div id="days" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00
-							</div>
-							<div class="text-white text-lg">Dias</div>
-						</div>
-						<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
-							<div id="hours" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00
-							</div>
-							<div class="text-white text-lg">Horas</div>
-						</div>
-						<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
-							<div id="minutes" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00
-							</div>
-							<div class="text-white text-lg">Minutos</div>
-						</div>
-						<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-4">
-							<div id="seconds" class="countdown-item text-4xl md:text-5xl font-bold text-yellow-400">00
-							</div>
-							<div class="text-white text-lg">Segundos</div>
-						</div>
-					</div>
-				</div>
-				<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-					<a href="https://www.sympla.com.br/evento/bsides-rio-de-janeiro/3226424"
-						target="_blank"
-						class="hero-button inline-block bg-yellow-400 text-black text-xl font-bold py-4 px-8 rounded-lg hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
-						Adquira seu ingresso de apoaidor
-					</a>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfi7j9jxFPIZ1nd1F2VQ2PKSz09l-GOaEP_aO6Klb_offz2kg/viewform"
-						class="inline-block bg-transparent border-2 border-yellow-400 text-yellow-400 text-xl font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
-						Call 4 papers
-					</a>
-				</div>
-			</div>
-		</main>
-		<section id="patrocinadores" class="py-16">
-			<div class="container mx-auto px-4">
-				<h2 class="text-4xl font-bold text-center text-white mb-12">Patrocinadores</h2>
-				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
-					<div class="mb-16">
-						<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Diamante</h3>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-							<a href="https://uva.br/"
-								class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-								<img src="images/patrocinadores/uva.webp" alt="UVA" class="max-h-28">
-							</a>
-						</div>
-					</div>
-					<div class="mb-16">
-						<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Ouro</h3>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-							<a href="https://hakaisecurity.io"
-								class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
-								<img src="images/patrocinadores/hakai.png" alt="Hakai" class="max-h-28">
-							</a>
-							<a href="https://www.vortexsecurity.com.br"
-								class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
-								<img src="images/patrocinadores/vortex.png" alt="Vortex" class="max-h-28">
-							</a>
-						</div>
-					</div>
-					<div class="mb-16">
-						<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Prata</h3>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-							<a href="https://bughunt.com.br"
-								class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
-								<img src="images/patrocinadores/logo-bughunt.svg" alt="Hakai" class="max-h-28">
-							</a>
-						</div>
-					</div>
-					<div class="mb-16">
-						<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Bronze</h3>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div></div> <!-- Espaço vazio para centralizar -->
-                            <div></div> <!-- Espaço vazio para centralizar -->
-                        </div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- <section id="patrocinadores" class="py-16">
-			<div class="container mx-auto px-4">
-				<h2 class="text-4xl font-bold text-center text-white mb-12">Desafio Bug Bounty</h2>
-				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
-					<div class="mb-16">
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-							<div></div>
-                            <a href="https://hackingclub.com" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/hackingclub.png" alt="HacKing Club" class="max-h-28">
-                            </a>
-							<div></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-        <section id="patrocinadores" class="py-16">
-			<div class="container mx-auto px-4">
-				<h2 class="text-4xl font-bold text-center text-white mb-12">Apoiadores</h2>
-				<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
-					<div class="mb-16">
-						<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-							<a href="https://www.latam.com.br/" 
-							class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-							<img src="/images/apoiadores/latam.jpg" alt="LATAM" class="max-h-28">
-                            <a href="https://www.instagram.com/meninadecybersec/"
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/meninacybersec.jpg" alt="Menina de Cybersec" class="max-h-28">
-                            </a>
-                            <a href="https://novatec.com.br" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/novatec.png" alt="Novatec" class="max-h-28">
-                            </a>
-                            <a href="https://linktr.ee/hackinrio" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/hackinrio.png" alt="Hack in Rio" class="max-h-28">
-                            </a>
-                            <a href="https://www.instagram.com/womcy/" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/womcy.png" alt="Womcy" class="max-h-28">
-                            </a>
-                            <a href="https://www.riomakerspace.com.br" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/rms.jpeg" alt="Rio Maker Space" class="max-h-28">
-                            </a>
-                            <a href="https://linktr.ee/hackincariri" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/hackincariri.png" alt="Hack in Cariri" class="max-h-28">
-                            </a>
-                            <!-- <a href="https://linktr.ee/mentebinaria" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/mentebinaria.png" alt="Mente Binária" class="max-h-28">
-                            </a> -->
-                            <a href="https://redteamvillage.io" 
-                                class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-                                <img src="/images/apoiadores/redteamvillage.png" alt="Red Team Village" class="max-h-28">
-                            </a>
-							<!-- <a href="https://www.instagram.com/meubonappetit/" 
-							class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
-							<img src="/images/apoiadores/bonappetit.png" alt="Bonappetit" class="max-h-28">
-							</a> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer class="text-center p-4 bg-black bg-opacity-80 text-white">
-			&copy; 2025 BSidesRJ - All rights reserved.
-		</footer>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSfi7j9jxFPIZ1nd1F2VQ2PKSz09l-GOaEP_aO6Klb_offz2kg/viewform"
+				class="inline-block bg-transparent border-2 border-yellow-400 text-yellow-400 text-xl font-bold py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+				Call 4 papers
+			</a>
+		</div>
 	</div>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-			const mobileMenu = document.getElementById('mobile-menu');
-			mobileMenuBtn.addEventListener('click', function () {
-				mobileMenu.classList.toggle('hidden');
-			});
-		});
-		function updateCountdown() {
-			const eventDate = new Date('March 28, 2026 09:00:00 GMT-0300').getTime();
-			const now = new Date().getTime();
-			const distance = eventDate - now;
-
-			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			document.getElementById('days').textContent = String(days).padStart(2, '0');
-			document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-			document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-			document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
-
-			if (distance < 0) {
-				clearInterval(countdownInterval);
-				document.getElementById('days').textContent = '00';
-				document.getElementById('hours').textContent = '00';
-				document.getElementById('minutes').textContent = '00';
-				document.getElementById('seconds').textContent = '00';
-			}
-		}
-		updateCountdown();
-		const countdownInterval = setInterval(updateCountdown, 1000);
-	</script>
-</body>
-</html>
+</main>
+<section id="patrocinadores" class="py-16">
+	<div class="container mx-auto px-4">
+		<h2 class="text-4xl font-bold text-center text-white mb-12">Patrocinadores</h2>
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Diamante</h3>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<a href="https://uva.br/"
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/patrocinadores/uva.webp" | relative_url }}" alt="UVA" class="max-h-28">
+					</a>
+				</div>
+			</div>
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Ouro</h3>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<a href="https://hakaisecurity.io"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/patrocinadores/hakai.png" | relative_url }}" alt="Hakai" class="max-h-28">
+					</a>
+					<a href="https://www.vortexsecurity.com.br"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/patrocinadores/vortex.png" | relative_url }}" alt="Vortex" class="max-h-28">
+					</a>
+				</div>
+			</div>
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Prata</h3>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<a href="https://bughunt.com.br"
+						class="bg-white rounded-lg p-6 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/patrocinadores/logo-bughunt.svg" | relative_url }}" alt="Hakai" class="max-h-28">
+					</a>
+				</div>
+			</div>
+			<div class="mb-16">
+				<h3 class="text-2xl font-semibold text-center text-yellow-400 mb-8">Patrocinadores Bronze</h3>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="apoiadores" class="py-16">
+	<div class="container mx-auto px-4">
+		<h2 class="text-4xl font-bold text-center text-white mb-12">Apoiadores</h2>
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mx-auto max-w-5xl">
+			<div class="mb-16">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+					<a href="https://www.latam.com.br/" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/latam.jpg" | relative_url }}" alt="LATAM" class="max-h-28">
+					</a>
+					<a href="https://www.instagram.com/meninadecybersec/"
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/meninacybersec.jpg" | relative_url }}" alt="Menina de Cybersec" class="max-h-28">
+					</a>
+					<a href="https://novatec.com.br" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/novatec.png" | relative_url }}" alt="Novatec" class="max-h-28">
+					</a>
+					<a href="https://linktr.ee/hackinrio" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/hackinrio.png" | relative_url }}" alt="Hack in Rio" class="max-h-28">
+					</a>
+					<a href="https://www.instagram.com/womcy/" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/womcy.png" | relative_url }}" alt="Womcy" class="max-h-28">
+					</a>
+					<a href="https://www.riomakerspace.com.br" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/rms.jpeg" | relative_url }}" alt="Rio Maker Space" class="max-h-28">
+					</a>
+					<a href="https://linktr.ee/hackincariri" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/hackincariri.png" | relative_url }}" alt="Hack in Cariri" class="max-h-28">
+					</a>
+					<a href="https://redteamvillage.io" 
+						class="bg-white rounded-lg p-8 flex items-center justify-center transform hover:scale-105 transition duration-300">
+						<img src="{{ "/images/apoiadores/redteamvillage.png" | relative_url }}" alt="Red Team Village" class="max-h-28">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

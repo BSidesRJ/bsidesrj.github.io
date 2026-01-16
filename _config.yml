@@ -1,0 +1,14 @@
+title: BSidesRJ
+url: "https://bsidesrj.github.io"
+baseurl: ""
+footer_text: "&copy; 2025 BSidesRJ - All rights reserved."
+collections:
+  speakers:
+    output: true
+    permalink: /speakers/:name.html
+defaults:
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker

@@ -1,138 +1,68 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSidesRJ - BSides Rio de Janeiro</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="icon" type="image/x-icon" href="\images\favicon.ico">
-    <style>
-        .countdown-item {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-        }
-        .hero-button {
-        animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-        }
-    </style>
-</head>
-
-<body class="overflow-x-hidden min-h-screen relative">
-    <div class="fixed-bg"></div>
-    <div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
-        <header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
-            <a href="/index.html">
-                <img src="images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
-            </a>
-            <nav class="hidden md:flex space-x-4 text-white text-lg">
-                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
-                <a href="/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
-                <a href="/contato.html" class="hover:text-yellow-400 transition">Contato</a>
-            </nav>
-            <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
-        </header>
-        <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
-            <ul class="flex flex-col p-4 space-y-2">
-                <li><a href="/index.html" class="block hover:text-yellow-400 transition">Home</a></li>
-                <li><a href="/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
-                <li><a href="/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
-                <li><a href="/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="pt-8"></div>
-        <main class="container mx-auto px-4 text-white flex-1 py-8">
-            <h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Contato</h1>
-            <div class="max-w-3xl mx-auto">
-                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mb-8">
-                    <h2 class="text-2xl font-bold mb-6 text-center">Redes Sociais</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <a href="https://www.instagram.com/bsidesrj/" target="_blank"
-                            class="flex items-center justify-center space-x-3 bg-gradient-to-r from-yellow-400 via-pink-500 via-red-500 to-purple-600 hover:from-yellow-500 hover:via-pink-600 hover:via-red-600 hover:to-purple-700 transition p-4 rounded-lg">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.45 3a1.25 1.25 0 1 1 1.25 1.25A1.25 1.25 0 0 1 16.2 6.5zM12 7.25a4.75 4.75 0 1 1-4.75 4.75A4.75 4.75 0 0 1 12 7.25zm0 1.5a3.25 3.25 0 1 0 3.25 3.25A3.25 3.25 0 0 0 12 8.75z" />
-                            </svg>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://www.linkedin.com/company/bsidesrj" target="_blank"
-                            class="flex items-center justify-center space-x-3 bg-blue-700 hover:bg-blue-800 transition p-4 rounded-lg">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                            </svg>
-                            <span>LinkedIn</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mb-8">
-                    <h2 class="text-2xl font-bold mb-6 text-center">Email</h2>
-                    <p class="text-center mb-4">Para dúvidas, sugestões ou parcerias, entre em contato:</p>
-                    <div class="flex justify-center">
-                        <a href="mailto:contato@bsidesrj.org"
-                            class="text-yellow-400 hover:text-yellow-300 text-xl font-semibold">
-                            bsides.rj@gmail.com
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8">
-                    <h2 class="text-2xl font-bold mb-6 text-center">Local do Evento</h2>
-                    <div class="text-center mb-6">
-                        <p class="text-xl text-yellow-400 mb-2">Universidade Veiga de Almeida - Campus Tijuca</p>
-                        <p>Rua Ibituruna, 108 - Tijuca</p>
-                        <p>Rio de Janeiro - RJ</p>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="https://www.uva.br/campus-tijuca/" target="_blank"
-                            class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path
-                                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                            </svg>
-                            Informações do Campus
-                        </a>
-                        <a href="https://goo.gl/maps/K8s7nQBsfKEfCqMf6" target="_blank"
-                            class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
-                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            Ver no Google Maps
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
-            2025 BSidesRJ - Todos os direitos reservados.
-        </footer>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuBtn.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
-</body>
-</html>
+---
+layout: default
+title: Contato
+footer_text: "2025 BSidesRJ - Todos os direitos reservados."
+---
+<div class="pt-8"></div>
+<main class="container mx-auto px-4 text-white flex-1 py-8">
+	<h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Contato</h1>
+	<div class="max-w-3xl mx-auto">
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mb-8">
+			<h2 class="text-2xl font-bold mb-6 text-center">Redes Sociais</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<a href="https://www.instagram.com/bsidesrj/" target="_blank"
+					class="flex items-center justify-center space-x-3 bg-gradient-to-r from-yellow-400 via-pink-500 via-red-500 to-purple-600 hover:from-yellow-500 hover:via-pink-600 hover:via-red-600 hover:to-purple-700 transition p-4 rounded-lg">
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+						<path
+							d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm8.45 3a1.25 1.25 0 1 1 1.25 1.25A1.25 1.25 0 0 1 16.2 6.5zM12 7.25a4.75 4.75 0 1 1-4.75 4.75A4.75 4.75 0 0 1 12 7.25zm0 1.5a3.25 3.25 0 1 0 3.25 3.25A3.25 3.25 0 0 0 12 8.75z" />
+					</svg>
+					<span>Instagram</span>
+				</a>
+				<a href="https://www.linkedin.com/company/bsidesrj" target="_blank"
+					class="flex items-center justify-center space-x-3 bg-blue-700 hover:bg-blue-800 transition p-4 rounded-lg">
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+						<path
+							d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+					</svg>
+					<span>LinkedIn</span>
+				</a>
+			</div>
+		</div>
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8 mb-8">
+			<h2 class="text-2xl font-bold mb-6 text-center">Email</h2>
+			<p class="text-center mb-4">Para dúvidas, sugestões ou parcerias, entre em contato:</p>
+			<div class="flex justify-center">
+				<a href="mailto:contato@bsidesrj.org" class="text-yellow-400 hover:text-yellow-300 text-xl font-semibold">
+					bsides.rj@gmail.com
+				</a>
+			</div>
+		</div>
+		<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-8">
+			<h2 class="text-2xl font-bold mb-6 text-center">Local do Evento</h2>
+			<div class="text-center mb-6">
+				<p class="text-xl text-yellow-400 mb-2">Universidade Veiga de Almeida - Campus Tijuca</p>
+				<p>Rua Ibituruna, 108 - Tijuca</p>
+				<p>Rio de Janeiro - RJ</p>
+			</div>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="https://www.uva.br/campus-tijuca/" target="_blank"
+					class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+					<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+						<path
+							d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+					</svg>
+					Informações do Campus
+				</a>
+				<a href="https://goo.gl/maps/K8s7nQBsfKEfCqMf6" target="_blank"
+					class="inline-flex items-center justify-center bg-transparent border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+					<svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+						<path fill-rule="evenodd"
+							d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+							clip-rule="evenodd" />
+					</svg>
+					Ver no Google Maps
+				</a>
+			</div>
+		</div>
+	</div>
+</main>

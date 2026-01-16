@@ -1,208 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSidesRJ - BSides Rio de Janeiro</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="icon" type="image/x-icon" href="\images\favicon.ico">
-    <style>
-        .countdown-item {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.05); }
-        100% { transform: scale(1); }
-        }
-        .hero-button {
-        animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-        }
-    </style>
-</head>
-
-<body class="overflow-x-hidden min-h-screen relative">
-    <div class="fixed-bg"></div>
-    <div class="content relative z-20 bg-black bg-opacity-50 flex flex-col min-h-screen">
-        <header class="bg-black bg-opacity-60 backdrop-blur-md shadow-lg py-3 flex items-center justify-between px-4">
-            <a href="/index.html">
-                <img src="images/logo.png" alt="BSidesRJ Logo" class="max-h-14">
-            </a>
-            <nav class="hidden md:flex space-x-4 text-white text-lg">
-                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="/schedule.html" class="hover:text-yellow-400 transition">Agenda</a>
-                <a href="/speakers.html" class="hover:text-yellow-400 transition">Palestrantes</a>
-                <a href="/contato.html" class="hover:text-yellow-400 transition">Contato</a>
-            </nav>
-            <button id="mobile-menu-btn" class="md:hidden text-white ml-4">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
-        </header>
-        <nav id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 text-white w-full">
-            <ul class="flex flex-col p-4 space-y-2">
-                <li><a href="/index.html" class="block hover:text-yellow-400 transition">Home</a></li>
-                <li><a href="/schedule.html" class="block hover:text-yellow-400 transition">Agenda</a></li>
-                <li><a href="/speakers.html" class="block hover:text-yellow-400 transition">Palestrantes</a></li>
-                <li><a href="/contato.html" class="block hover:text-yellow-400 transition">Contato</a></li>
-            </ul>
-        </nav>
-        <main class="container mx-auto px-4 py-16">
-            <h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Agenda</h1>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-4 md:p-6">
-                    <h2 class="text-2xl font-bold mb-4 text-center text-white">Main Stage</h2>
-                    <div class="space-y-4">
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">08:00</p>
-                            <p class="text-white">Abertura dos portões/Credênciamento</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">09:20</p>
-                            <p class="text-white">Cerimônia de abertura</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">09:30 - 10:10</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/fernando-merces.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">10:10 - 11:00</p>
-                            <p class="font-medium text-white">Pipeline seguro para modelos de IA</p>
-                            <p class="text-sm text-gray-300">Michelle Mesquita</p>
-                            <a href="speakers/michelle-mesquita.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">11:00 - 11:50</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/rodrigo-ferreira.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">11:50 - 12:40</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/lucas-carmo.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">12:40 - 14:00</p>
-                            <p class="font-medium text-white">Lunch Break</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">14:00 - 14:50</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/iago-blambila.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">14:50 - 15:40</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/jose-luiz.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">15:40 - 16:30</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/heitor-gouvea.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">16:30 - 17:20</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">Nelson Brito</p>
-                            <a href="speakers/nelson-brito.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">17:20</p>
-                            <p class="font-medium text-white">Sorteios e Cerimônia de Encerramento</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-4 md:p-6">
-                    <h2 class="text-2xl font-bold mb-4 text-center text-white">Secondary Stage</h2>
-                    <div class="space-y-4">
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">08:00</p>
-                            <p class="font-medium text-white">Palco Fechado</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">09:20</p>
-                            <p class="font-medium text-white">Palco Fechado</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">09:30</p>
-                            <p class="font-medium text-white">Palco Fechado</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">10:10 - 11:00</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/heitor-gouvea.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">11:00 - 11:50</p>
-                            <p class="font-medium text-white">Android Game Hacking</p>
-                            <p class="text-sm text-gray-300">Abid Lohan</p>
-                            <a href="speakers/abid-lohan.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">11:50 - 12:40</p>
-                            <p class="font-medium text-white">De 0 ao SOC: A curva real que ninguém ensina (e por que isso importa)</p>
-                            <p class="text-sm text-gray-300">Kizzy Macedo Benjamin</p>
-                            <a href="speakers/kizzy-macedo.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">12:40 - 14:00</p>
-                            <p class="font-medium text-white">Lunch Break</p>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">14:00 - 14:50</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/pedro-sydenstricker.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">14:50 - 15:40</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/zoziel-freire.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">15:40 - 16:30</p>
-                            <p class="font-medium text-white">TBD</p>
-                            <p class="text-sm text-gray-300">TBD</p>
-                            <a href="speakers/lucas-reis.html" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
-                        </div>
-                        <div class="border-b border-gray-600 pb-4">
-                            <p class="text-lg font-semibold text-yellow-400">16:30</p>
-                            <p class="font-medium text-white">Palco Fechado</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="text-center p-4 bg-black bg-opacity-80 text-white">
-            &copy; 2025 BSidesRJ - All rights reserved.
-        </footer>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuBtn.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-            });
-        });
-    </script>
-</body>
-</html>
+---
+layout: default
+title: Agenda
+---
+<main class="container mx-auto px-4 py-16">
+	<h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Agenda</h1>
+	<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+		{% for stage in site.data.schedule %}
+			<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg shadow-lg p-4 md:p-6">
+				<h2 class="text-2xl font-bold mb-4 text-center text-white">{{ stage.stage }}</h2>
+				<div class="space-y-4">
+					{% for item in stage.items %}
+						<div class="border-b border-gray-600 pb-4">
+							<p class="text-lg font-semibold text-yellow-400">{{ item.time }}</p>
+							<p class="font-medium text-white">{{ item.title }}</p>
+							{% if item.speaker %}
+								<p class="text-sm text-gray-300">{{ item.speaker }}</p>
+							{% endif %}
+							{% if item.speaker_url %}
+								<a href="{{ item.speaker_url | relative_url }}" class="text-yellow-400 hover:text-yellow-300 text-sm">View details</a>
+							{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</main>
