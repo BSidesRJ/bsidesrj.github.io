@@ -67,6 +67,7 @@
     - time: "14:50 - 15:40"
       title: "Linux Rootkits: an introduction to LKM"
       speaker: "Diego Berger Tellaroli"
+      speaker_url: "/speakers/diego-tellaroli.html"
     - time: "15:40 - 16:30"
       title: "TBD"
     - time: "16:30"
