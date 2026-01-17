@@ -1,7 +1,7 @@
 ---
 name: Christiana Couto
 order: 8
-photo: /images/speakers/default-avatar.png
+photo: /images/speakers/chirs-couto.jpg
 talk_title: "Metodo para escolher a melhor vaga em concursos publicos, em seguranca da informacao, para diferentes perfis"
 talk_time: TBD
 talk_stage: Village WOMCY

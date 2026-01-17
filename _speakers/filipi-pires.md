@@ -1,7 +1,7 @@
 ---
 name: Filipi Pires
 order: 11
-photo: /images/speakers/
+photo: /images/speakers/filipi-pires.jpg
 talk_title: "Weaponizing PDF Files: Advanced Exploitation Techniques for Red Teams"
 talk_time: TBD
 talk_stage: 

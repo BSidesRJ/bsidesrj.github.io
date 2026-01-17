@@ -1,7 +1,7 @@
 ---
 name: Diego Berger Tellaroli
 order: 12
-photo: /images/speakers/
+photo: /images/speakers/diego-berger.png
 talk_title: "Linux Rootkits: an introduction to LKM"
 talk_time: 14:50 - 15:40
 talk_stage: 
