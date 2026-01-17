@@ -1,7 +1,7 @@
 ---
 name: Dayane Zimmerer
 order: 10
-photo: /images/speakers/default-avatar.png
+photo: /images/speakers/dayane-z.jpg
 talk_title: "A linguagem C - Como falar para que os C-levels nos entendam"
 talk_time: TBD
 talk_stage: Village WOMCY
