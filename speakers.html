@@ -8,6 +8,9 @@ title: Palestrantes
 		{% assign speakers = site.speakers | sort: "order" %}
 		{% for speaker in speakers %}
 			<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
+				<div class="w-24 h-24 rounded-full overflow-hidden mb-4 mx-auto">
+					<img src="{{ speaker.photo | relative_url }}" alt="{{ speaker.name }}" class="w-full h-full object-cover" onerror="this.src='{{ "/images/speakers/default-avatar.png" | relative_url }}'">
+				</div>
 				<h3 class="text-2xl font-bold text-white mb-2">{{ speaker.name }}</h3>
 				<p class="text-gray-300 mb-4">{{ speaker.talk_title | default: "TBD" }}</p>
 				<a href="{{ speaker.url | relative_url }}" class="text-yellow-400 hover:text-yellow-300">Ver mais detalhes →</a>
