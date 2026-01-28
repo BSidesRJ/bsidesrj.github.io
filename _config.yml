@@ -1,7 +1,7 @@
 title: BSidesRJ
 url: "https://bsidesrj.github.io"
 baseurl: ""
-footer_text: "&copy; 2025 BSidesRJ - All rights reserved."
+footer_text: "&copy; 2025 - 2026 | BSidesRJ - All rights reserved."
 collections:
   speakers:
     output: true
