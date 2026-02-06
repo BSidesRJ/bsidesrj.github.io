@@ -3,8 +3,8 @@ name: Abid Lohan
 order: 5
 photo: /images/speakers/abid-lohan.jpg
 talk_title: Android Game Hacking
-talk_time: 11:00 - 11:50
-talk_stage: Palco Principal
+talk_time: 10:10 - 11:00
+talk_stage: Palco Secundário
 talk_description: |
   A palestra Android Game Hacking introduz os conceitos essenciais do funcionamento do Android e das práticas de game hacking, mostrando como jogos podem ser manipulados quando não possuem boas proteções.
   Serão apresentadas técnicas de engenharia reversa, análise de requisições e os principais desafios impostos por mecanismos de segurança aplicados em jogos modernos.
