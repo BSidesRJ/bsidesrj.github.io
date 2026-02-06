@@ -3,7 +3,8 @@ name: Rômulo Rocha
 order: 3
 photo: /images/speakers/romulo-rocha.jpg
 talk_title: O primeiro dia de um agente de IA no SOC
-talk_time: TBD
+talk_time: 11:50 - 12:40
+talk_stage: Palco Secundário
 talk_description: |
   Nesta palestra, compartilho a experiência prática de construção e integração de agentes de IA em um Security Operation Center.
   Vamos explorar quais problemas podem ser resolvidos na triagem de alertas, avaliar a eficácia dos agentes em tarefas específicas e entender como utilizar a API da OpenAI, ferramentas ("tools"), memória e frameworks open source para criar seu próprio agente.
