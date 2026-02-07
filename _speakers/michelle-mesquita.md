@@ -3,8 +3,8 @@ name: Michelle Mesquita
 order: 4
 photo: /images/speakers/michelle-mesquita.png
 talk_title: Pipeline seguro para modelos de IA
-talk_time: 10:10 - 11:00
-talk_stage: Palco Principal
+talk_time: 14:00 - 14:50
+talk_stage: Palco Secundário
 talk_description: |
   Descubra como ferramentas de IA para automação de pipelines detectam vulnerabilidades, facilitam correlações inteligentes e provocam melhorias no cálculo de risco, impulsionando a proteção e eficiência do desenvolvimento seguro.
 bio: |
