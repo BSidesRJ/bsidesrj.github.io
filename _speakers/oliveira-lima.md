@@ -3,7 +3,7 @@ name: Oliveira Lima
 order: 2
 photo: /images/speakers/oliveira-lima.jpeg
 talk_title: OPSEC for Red Teams - Operações Clandestinas Autorizadas
-talk_time: TBD
+talk_time: 10:10 - 11:00
 talk_stage: Palco Principal
 talk_description: |
   Como costumo dizer: não simule a ameaça — seja a ameaça.

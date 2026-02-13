@@ -3,8 +3,8 @@ name: Christiana Couto
 order: 8
 photo: /images/speakers/chirs-couto.jpg
 talk_title: "Metodo para escolher a melhor vaga em concursos publicos, em seguranca da informacao, para diferentes perfis"
-talk_time: TBD
-talk_stage: Village WOMCY
+talk_time: 10:10 - 11:00
+talk_stage: Women Village
 talk_description: |
   Nesta palestra, compartilho minha trajetória pessoal até a aprovação em concursos públicos na área de Segurança da Informação, destacando aprendizados práticos, erros comuns e estratégias que fizeram a diferença ao longo do caminho.
   Inicialmente, será apresentado um panorama histórico dos concursos públicos no Brasil com vagas específicas para Segurança da Informação, permitindo ao público compreender a evolução do mercado, a recorrência das oportunidades e os perfis mais demandados. Em seguida, abordarei os principais formatos de avaliação utilizados pelas bancas examinadoras, incluindo provas objetivas (múltipla escolha, certo/errado), discursivas (estudos de caso e questões abertas) e avaliação de títulos (formação acadêmica, experiência profissional e certificações), com foco nas bancas mais relevantes do país.
