@@ -69,7 +69,9 @@
       speaker: "Diego Berger Tellaroli"
       speaker_url: "/speakers/diego-tellaroli.html"
     - time: "15:40 - 16:30"
-      title: "TBD"
+      title: "SOC & CTI Inteligente: Alinhando Operações de Segurança às Leis, Normas, Frameworks e Boas Práticas Globais"
+      speaker: "Cristiano Soraggi"
+      speaker_url: "/speakers/cristiano-soraggi.html" 
     - time: "16:30"
       title: "Palco Fechado"
 - stage: Women Village
