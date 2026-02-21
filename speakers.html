@@ -5,7 +5,7 @@ title: Palestrantes
 <main class="container mx-auto px-4 py-16">
 	<h1 class="text-4xl font-bold text-center text-yellow-400 mb-12">Palestrantes</h1>
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-		{% assign speakers = site.speakers | sort: "order" %}
+		{% assign speakers = site.speakers | sort: "name" %}
 		{% for speaker in speakers %}
 			<div class="bg-black bg-opacity-60 backdrop-blur-md rounded-lg p-6 transform hover:scale-105 transition duration-300">
 				<div class="w-24 h-24 rounded-full overflow-hidden mb-4 mx-auto">
