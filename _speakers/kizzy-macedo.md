@@ -2,7 +2,7 @@
 name: Kizzy Macedo Benjamin
 order: 6
 photo: /images/speakers/kizzy-macedo.png
-talk_title: "De 0 ao SOC: A curva real que ninguém ensina (e por que isso importa)"
+talk_title: "De 0 ao SOC: a curva real que ninguém ensina (e por que isso importa)"
 talk_time: 11:00 - 11:50
 talk_stage: Palco principal
 talk_description: |
