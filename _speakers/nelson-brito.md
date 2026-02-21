@@ -2,7 +2,7 @@
 name: Nelson Brito
 order: 1
 photo: /images/speakers/nelson-brito.jpeg
-talk_title: "TBD"
+talk_title: "The Big Bang Theory"
 talk_time: 16:30
 talk_stage: Palco Principal
 talk_description: |
