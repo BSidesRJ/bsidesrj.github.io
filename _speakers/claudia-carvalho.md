@@ -2,7 +2,7 @@
 name: Claudia Carvalho
 order: 7
 photo: /images/speakers/claudia-bonard.jpeg
-talk_title: "Ctrl+Alt+Traicao: do Dev ao vilao corporativo (insider)"
+talk_title: "Ctrl + Alt + Traição: do dev ao vilão corporativo (insider)"
 talk_time: 09:30 - 10:10
 talk_stage: Women Village
 talk_description: |
