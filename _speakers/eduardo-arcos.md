@@ -1,7 +1,7 @@
 ---
 name: Eduardo Arcos
 order: 11
-photo: /images/speakers/
+photo: /images/speakers/eduardo-arcos.png
 talk_title: ""
 talk_time: TBD
 talk_stage: 
