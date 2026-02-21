@@ -11,5 +11,5 @@ talk_description: |
   Na sequência, apresentarei um método próprio para escolha estratégica de concursos, desenvolvido a partir da minha experiência, que auxilia o profissional a identificar a vaga mais adequada ao seu perfil. Esse método considera fatores como nível de experiência, área de interesse, localização, remuneração, possibilidade de trabalho remoto, poder (Executivo, Legislativo ou Judiciário) e esfera (municipal, estadual ou federal).
   A palestra se encerra com uma abordagem motivacional, reforçando que a aprovação em concursos públicos é um processo construído ao longo de múltiplas tentativas. O objetivo é mostrar que é possível ingressar no serviço público, evoluir para vagas melhores ao longo da carreira e tomar decisões mais conscientes sobre preparação, foco e planejamento, aumentando significativamente as chances de aprovação.
 bio: |
-
+  Servidora pública federal no Instituto Nacional da Propriedade Industrial, doutoranda em Engenharia de Defesa no Instituto Militar de Engenharia e professora na Faculdade Infnet na graduação em Segurança Cibernética. Apaixonada por segurança da Informação, já trabalhou em multinacionais como analista em segurança da informação antes de seguir os passos de seus pais e passar para o serviço público.
 ---
