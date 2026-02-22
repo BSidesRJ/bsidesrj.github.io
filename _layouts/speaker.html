@@ -11,11 +11,26 @@ layout: default
 		</div>
 
 		<div class="mb-12">
-			<h2 class="text-2xl font-bold text-yellow-400 mb-4">{{ page.talk_title }}</h2>
-			<p class="text-lg text-white mb-4">{{ page.talk_time }}{% if page.talk_stage %} - {{ page.talk_stage }}{% endif %}</p>
-			<div class="prose prose-lg text-gray-300">
-				{{ page.talk_description | markdownify }}
-			</div>
+			{% if page.talks %}
+				{% for talk in page.talks %}
+					<div class="mb-8">
+						<h2 class="text-2xl font-bold text-yellow-400 mb-4">{{ talk.title }}</h2>
+						<p class="text-lg text-white mb-4">{{ talk.time }}{% if talk.stage %} - {{ talk.stage }}{% endif %}</p>
+						{% if talk.description %}
+							<div class="prose prose-lg text-gray-300">
+								{{ talk.description | markdownify }}
+							</div>
+						{% endif %}
+					</div>
+				{% endfor %}
+			{% endif %}
+			{% unless page.talks %}
+				<h2 class="text-2xl font-bold text-yellow-400 mb-4">{{ page.talk_title }}</h2>
+				<p class="text-lg text-white mb-4">{{ page.talk_time }}{% if page.talk_stage %} - {{ page.talk_stage }}{% endif %}</p>
+				<div class="prose prose-lg text-gray-300">
+					{{ page.talk_description | markdownify }}
+				</div>
+			{% endunless %}
 		</div>
 		<div>
 		<h2 class="text-2xl font-bold text-yellow-400 mb-4">Sobre</h2>
