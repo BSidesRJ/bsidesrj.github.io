@@ -15,6 +15,8 @@ talks:
       Na sequência, apresentarei um método próprio para escolha estratégica de concursos, desenvolvido a partir da minha experiência, que auxilia o profissional a identificar a vaga mais adequada ao seu perfil. Esse método considera fatores como nível de experiência, área de interesse, localização, remuneração, possibilidade de trabalho remoto, poder (Executivo, Legislativo ou Judiciário) e esfera (municipal, estadual ou federal).
       A palestra se encerra com uma abordagem motivacional, reforçando que a aprovação em concursos públicos é um processo construído ao longo de múltiplas tentativas. O objetivo é mostrar que é possível ingressar no serviço público, evoluir para vagas melhores ao longo da carreira e tomar decisões mais conscientes sobre preparação, foco e planejamento, aumentando significativamente as chances de aprovação.
   - title: "De mãe para filha: a historia da minha trajetória profissional na área de segurança da informação"
+    description: |
+      As trajetórias de mãe e filha seguindo carreiras na área de TI, ao longo de meio século, representam as superações que abriram caminho para as mulheres entrararem no setor de TI com mais respeito e oportunidades. O avanço da participação feminina será apresentado com estatísticas, em paralelo ao exemplo real de um casal com dois filhos.
     time: 10:10 - 11:00
     stage: Palco Women Village
 bio: |
