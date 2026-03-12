@@ -3,8 +3,8 @@ name: Eric Fraga
 order: 20
 photo: /images/speakers/eric-fraga.jpg
 talk_title: "The dark side of SEO: how adversaries hijack search results"
-talk_time: 15:40 - 16:30
-talk_stage: Palco secundário
+talk_time: 11:00 - 11:50
+talk_stage: Palco principal
 talk_description: |
     A ideia da palestra é trazer o contexto em incidentes de segurança envolvendo SEO poisoning, quais tratativas são necessárias, ataques de ransomware que utilizam SEO poisoning,cases de uso, , como a empresa consegue fazer tratativas proativas em relação a incidente de segurança no ambiente.
 bio: |
