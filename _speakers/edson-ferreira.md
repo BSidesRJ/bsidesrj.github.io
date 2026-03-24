@@ -1,7 +1,7 @@
 ---
 name: Edson Ferreira
 order: 33
-photo: /images/logo.png
+photo: /images/speakers/edson.jpg
 talk_title: "Engenharia do Anonimato: Infraestrutura Segura para Operações de Investigação Digital e Hacking Ético"
 talk_time: 14:00 - 14:50
 talk_stage: Digital Investigation Village
@@ -13,4 +13,5 @@ talk_description: |
   O objetivo é ensinar como construir uma arquitetura operacional menos rastreável, promovendo privacidade e responsabilidade no uso dessas técnicas em pesquisa, testes e demonstração de vulnerabilidades em ambientes controlados.
 bio: |
   Pesquisador e consultor em segurança da informação, com atuação em OPSEC, privacidade, investigações digitais e operações de segurança ofensiva.
+  Especialista em Segurança Cibernética (MBA Executivo) e Graduação em Análise e Desenvolvimento de Sistemas.
 ---

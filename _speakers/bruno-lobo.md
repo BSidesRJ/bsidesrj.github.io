@@ -1,7 +1,7 @@
 ---
 name: Bruno Lobo
 order: 31
-photo: /images/logo.png
+photo: /images/speakers/bruno-lobo.jpg
 talk_title: "Quando a nuvem vira vitrine: exposição de dados em buckets públicos"
 talk_time: 10:10 - 11:00
 talk_stage: Digital Investigation Village
