@@ -1,6 +1,7 @@
 ---
 name: Marco Combat
 order: 34
+photo: /images/speakers/marco-combat.jpg
 talk_title: "Ambientes Descartáveis na Prática: Containers, OPSEC e Segurança com Kasm Workspaces"
 talk_time: 14:50 - 15:40
 talk_stage: Digital Investigation Village
