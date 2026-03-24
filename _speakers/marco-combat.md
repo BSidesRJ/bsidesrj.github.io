@@ -14,4 +14,8 @@ talk_description: |
   Serão explorados os ganhos em segurança, agilidade e redução de
   riscos, além de comparações com abordagens tradicionais e
   demonstrações práticas.
+bio: |
+  Marco Combat é especialista em cibersegurança, arquitetura de sistemas e computação em nuvem, com mais de 20 anos de experiência em tecnologia.
+
+  É professor, na WB Educação, de pós-graduação e instrutor em temas como OSINT, cloud e inteligência aplicada, formando profissionais em todo o Brasil. Ao longo da carreira, liderou projetos de desenvolvimento, automação e segurança, com foco em ambientes escaláveis, resilientes e seguros.
 ---
