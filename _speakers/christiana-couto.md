@@ -17,7 +17,7 @@ talks:
   - title: "De mãe para filha: a historia da minha trajetória profissional na área de segurança da informação"
     description: |
       As trajetórias de mãe e filha seguindo carreiras na área de TI, ao longo de meio século, representam as superações que abriram caminho para as mulheres entrararem no setor de TI com mais respeito e oportunidades. O avanço da participação feminina será apresentado com estatísticas, em paralelo ao exemplo real de um casal com dois filhos.
-    time: 10:10 - 11:00
+    time: 14:00 - 14:50
     stage: Palco Women Village
 bio: |
   Servidora pública federal no Instituto Nacional da Propriedade Industrial, doutoranda em Engenharia de Defesa no Instituto Militar de Engenharia e professora na Faculdade Infnet na graduação em Segurança Cibernética. Apaixonada por segurança da Informação, já trabalhou em multinacionais como analista em segurança da informação antes de seguir os passos de seus pais e passar para o serviço público. Christiana possui certificações como CISA, AWS Security Specialty e Azure Security Engineer.

@@ -3,7 +3,7 @@ name: Kizzy Macedo Benjamin
 order: 6
 photo: /images/speakers/kizzy-macedo.png
 talk_title: "De 0 ao SOC: a curva real que ninguém ensina (e por que isso importa)"
-talk_time: 11:00 - 11:50
+talk_time: 14:00 - 14:50
 talk_stage: Palco principal
 talk_description: |
   Por que há tantas vagas em SOC e tão pouca gente entrando? Nesta palestra, você entende a verdadeira curva de aprendizado do Blue Team — uma ordem clara que começa pelos fundamentos (redes, sistemas e automação), evolui para práticas de SOC (SIEM, logs, MITRE) e chega ao que realmente gera entrevistas: um portfólio simples, mas verificável.
