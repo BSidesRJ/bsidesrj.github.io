@@ -1,7 +1,7 @@
 ---
 name: Luciane Goes
 order: 41
-photo: /images/logo.png
+photo: /images/speakers/luciane.jpg
 talk_title: "Como dar bypass no RH"
 talk_time: 10:20
 talk_stage: Red Team Village

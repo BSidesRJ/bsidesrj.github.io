@@ -1,7 +1,7 @@
 ---
 name: Heitor Gouvêa
 order: 44
-photo: /images/logo.png
+photo: /images/speakers/heitor-gouvea.jpg
 talk_title: "Look mom, my phishing wasn't detected!"
 talk_time: 14:00
 talk_stage: Red Team Village

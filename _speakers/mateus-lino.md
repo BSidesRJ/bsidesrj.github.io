@@ -1,7 +1,7 @@
 ---
 name: Mateus Lino
 order: 40
-photo: /images/logo.png
+photo: /images/speakers/mateus-lino.png
 talk_title: "Fuzzing 101 - An step by step Fuzzing *OS"
 talk_time: 09:30
 talk_stage: Red Team Village

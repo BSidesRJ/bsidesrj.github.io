@@ -1,7 +1,7 @@
 ---
 name: Eduardo Cardoso
 order: 43
-photo: /images/logo.png
+photo: /images/speakers/eduardo-cardoso.jpg
 talk_title: "Access Granted: O estado das aplicações web no Brasil"
 talk_time: 12:00
 talk_stage: Red Team Village
