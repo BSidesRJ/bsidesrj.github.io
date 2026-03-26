@@ -3,7 +3,7 @@ name: Heitor Gouvêa
 order: 44
 photo: /images/speakers/heitor-gouvea.jpg
 talk_title: "Look mom, my phishing wasn't detected!"
-talk_time: 14:00
+talk_time: "14h"
 talk_stage: Red Team Village
 talk_description: |
   Campanhas modernas de phishing raramente falham por causa da engenharia social, elas falham porque são detectadas cedo demais.
