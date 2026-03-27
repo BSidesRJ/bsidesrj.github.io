@@ -3,7 +3,7 @@ name: Oliveira Lima
 order: 2
 photo: /images/speakers/oliveira-lima.jpeg
 talk_title: OPSEC for Red Teams - operações clandestinas autorizadas
-talk_time: 10:10 - 11:00
+talk_time: 09:30 - 10:10
 talk_stage: Palco Principal
 talk_description: |
   Como costumo dizer: não simule a ameaça — seja a ameaça.
